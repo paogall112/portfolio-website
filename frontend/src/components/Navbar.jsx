@@ -6,7 +6,6 @@ function Navbar() {
 
     const menuList = [
         {link: "#About", name:"About"},
-        {link: "#Passion", name:'Passion'},
         {link: "#Experience", name:'Experience'},
         {link: "#Projects", name:'Projects'},
         {link: "#Contacts", name:'Contacts'}
