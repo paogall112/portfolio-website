@@ -14,7 +14,7 @@ function Navbar() {
 
     return ( 
         <>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            {/* <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> */}
             <div className="nav">
                 <div className="page-padding">
                     <div className="container">
