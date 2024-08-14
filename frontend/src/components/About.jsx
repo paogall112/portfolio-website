@@ -12,7 +12,7 @@ function About() {
                             <h2 className='h2'>About Me</h2>
                             <p> </p>
                         </div>
-                        <div className="home-hero-header">
+                        <div className="section-content">
                             <div className="about-pic-wrap"> 
                                 <img src={aboutPic} alt="menu-icon" className="home-pic" />
                                 <div className="home-hero-subheader">
@@ -26,7 +26,7 @@ function About() {
                                 </div>
                             </div>
                             <div className="home-hero-subheader">
-                                <div className='about-topic-font-size'>
+                                <div className='topic-font-size'>
                                     <h1>Education</h1>
                                 </div>
                                 <ul>
