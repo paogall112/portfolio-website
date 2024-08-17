@@ -12,7 +12,7 @@ function About() {
                             <h2 className='h2'>About Me</h2>
                             <p> </p>
                         </div>
-                        <div className="section-content">
+                        <div className="section-content flex about-column-gap about-margin">
                             <div className="about-pic-wrap"> 
                                 <img src={aboutPic} alt="menu-icon" className="home-pic" />
                                 <div className="home-hero-subheader">

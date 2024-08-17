@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function BurgerMenu({menuList}) {
 
-    const burgerMenu = require('./assets/hamburger-menu-white.svg').default;
+    const burgerMenu = require('./assets/icons/hamburger-menu-white.svg').default;
 
     const [isOpen, setIsOpen] = useState(false);
 
