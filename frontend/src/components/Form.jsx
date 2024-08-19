@@ -1,16 +1,14 @@
 import React, { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
+import ModalAlert from './ModalAlert';
 
 function Form() {
   const form = useRef();
 
-  // const sample = (process.env.RESEND_API_KEY);
-          // process.env.REACT_APP_RESEND_TEMPLATE_ID,  
-          // process.env.REACT_APP_RESEND_API_KEY
-  // console.log("API ID",process.env.REACT_APP_RESEND_API_ID)
-
   const mailIcon = require('./assets/icons/mail.svg').default;
   const twitterIcon = require('./assets/icons/twitter.svg').default;
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [formData, setFormData] = useState({
     user_name: '',
@@ -22,9 +20,8 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
     if (!formData.user_name || !formData.user_email || !formData.message) {
-  } else {
+  } else {    
       emailjs
         .sendForm(
           process.env.REACT_APP_RESEND_API_ID,
@@ -34,7 +31,7 @@ function Form() {
         })
         .then(
           () => {            
-            alert('Form submitted successfully!');
+            setIsModalOpen(true);
           },
           (error) => {
             console.log('Failed...',error.text)
@@ -75,6 +72,10 @@ function Form() {
       ...errors,
       [name]: '',
     })
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -145,7 +146,8 @@ function Form() {
             </div>
 
             <input type="submit" className='submit-button' value="Send"></input>
-          </form>
+          </form>            
+            <ModalAlert isOpen={isModalOpen} onClose={closeModal} />
       </div>      
     </>
   );
