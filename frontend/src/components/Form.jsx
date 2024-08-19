@@ -6,7 +6,7 @@ function Form() {
   const form = useRef();
 
   const mailIcon = require('./assets/icons/mail.svg').default;
-  const twitterIcon = require('./assets/icons/twitter.svg').default;
+  const xIcon = require('./assets/icons/X.svg').default;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -93,8 +93,8 @@ function Form() {
                 <span>j.paogallardo@gmail.com</span>
             </a>
             <a href="https://x.com/jpaogallardo" className='email-layout'>
-                <img src={twitterIcon} alt='mail-icon' className="nav-burger-icon"></img>
-                <span>Twitter</span>
+                <img src={xIcon} alt='x-icon' className="nav-burger-icon"></img>
+                <span>X (formerly Twitter)</span>
             </a>
         </div>
         <h1>Write me a message 📩 ⬇</h1>

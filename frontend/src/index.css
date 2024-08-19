@@ -14,6 +14,11 @@ body {
   color: hsla(0, 0%, 0%, 0.822);
   font-size: 16px;
   line-height: 1.2;  
+  background-image: url("./components/assets/rm222-mind-22.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;  
 }
 
 code {
@@ -149,14 +154,6 @@ a{
 
 .nav-burger-menu.show .nav-link:hover {
   color:hsl(206, 6%, 24%);
-}
-
-.main {
-  background-image: url("./components/assets/rm222-mind-22.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 .home-hero {
@@ -439,7 +436,7 @@ img#invSys.carousel-image{
 
 .contact-layout {
   display: flex;
-  gap:2em;
+  gap:3em;
 }
 
 .form-layout {
@@ -507,7 +504,6 @@ img#invSys.carousel-image{
 }
 
 .resume-layout{  
-  /* background: white;  */
   max-width: 20em;
   border-radius: 10px; 
   max-height: 28em; 
@@ -516,8 +512,6 @@ img#invSys.carousel-image{
   justify-content: center;
   background-image: url("./components/assets/resume-preview.jpg");  
   background-repeat: no-repeat;
-  /* background-size:contain; */
-  /* background-attachment: fixed; */
   background-position:75%;
 }
 
@@ -553,6 +547,52 @@ img#invSys.carousel-image{
 
 .resume-button:hover{
   background-color: hsla(267, 72%, 52%);
+}
+
+.footer-blur{  
+  background-color: hsla(0, 0%, 100%, 0.568);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.footer-content{
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.footer-space{
+  height:5em;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;  
+}
+
+.footer-icons{
+  justify-content: center;
+  align-items:baseline;
+  gap: 1em;
+}
+
+.footer-icon-size{
+  margin-top: 1px;
+  width: 2em;;
+  padding: 0.5em;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-icon-size:hover{ 
+  background-color: hsl(267, 72%, 72%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.541);
+}
+
+.footer-credits{
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;  
+  font-size: 1em;
 }
 
 

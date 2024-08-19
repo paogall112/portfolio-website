@@ -9,7 +9,7 @@ function Main() {
 
     return ( 
         <>
-            <main className="main">
+            <main>
                 <header className="home-hero">
                     <div className="page-padding">
                         <div className="container">
