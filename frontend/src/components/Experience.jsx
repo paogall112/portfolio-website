@@ -15,7 +15,7 @@ function Experience() {
 
     return ( 
         <>
-            <section className="experience-section section">
+            <section id="Experience" className="experience-section section">
                 <div className="page-padding">
                     <div className="container">
                         <div className="section-header">
@@ -23,7 +23,7 @@ function Experience() {
                             <p> </p>
                         </div>
                         <div >
-                            <div className='section-content exp-margin'> {/*className="section-content"*/}
+                            <div className='section-content exp-margin'>
                                 <div className='topic-font-size'>
                                     <h1>CMS Management Intern</h1>
                                 </div>

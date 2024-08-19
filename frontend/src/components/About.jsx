@@ -5,7 +5,7 @@ function About() {
 
     return ( 
         <>
-            <section className="about-section section">
+            <section id="About" className="about-section section">
                 <div className="page-padding">
                     <div className="container">
                         <div className="section-header">

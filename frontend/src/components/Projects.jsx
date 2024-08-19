@@ -35,7 +35,7 @@ function Projects() {
 
     return ( 
         <>
-            <section className="projects-section">
+            <section id="Projects" className="projects-section section">
                 <div className="page-padding">
                     <div className="container">
                         <div className="section-header">

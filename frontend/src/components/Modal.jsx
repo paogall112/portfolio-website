@@ -1,17 +1,20 @@
-import React, { useEffect} from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './styles/carousel.css';
 
 function Modal({isOpen, onClose, imageSrc, imageAlt, imageId}) {
+    const sliderRef = useRef(null);
 
     useEffect(() => {
         if (isOpen) {
-            document.body.classList.add('no-scroll');
-            
+            document.body.classList.add('no-scroll');         
         } else {
             document.body.classList.remove('no-scroll');
+            if (sliderRef.current) {
+                sliderRef.current.slickGoTo(0);
+            }
         }
 
         return () => {
@@ -94,7 +97,7 @@ function Modal({isOpen, onClose, imageSrc, imageAlt, imageId}) {
                 <div className={`modal-overlay ${isOpen ? 'show' : ''}`} onClick={onClose}>
                     <div className={`modal-content ${isOpen ? 'show' : ''}`} onClick={(e) => e.stopPropagation()}>                        
                         <span className="modal-close" onClick={onClose}>&times;</span>
-                        <Slider {...settings}>
+                        <Slider {...settings} ref={sliderRef}>
                             {projectListCarousel.map((item,index) => (                            
                                 <div key={index}>
                                     <img src={item.source} alt={item.alternative} id={item.id} className="carousel-image"></img>   
