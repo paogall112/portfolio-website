@@ -37,11 +37,11 @@ function Projects() {
         <>
             <section id="Projects" className="projects-section section">
                 <div className="page-padding">
-                    <div className="container">
+                    <div className="projects-container">
                         <div className="section-header">
                             <h2 className='h2'>Projects</h2>
                         </div>
-                        <div className="section-content block exp-margin">
+                        <div className="flex-wrap projects-margin">
                             {projectList.map((item,index) => (
                                 <div className="image-container">   
                                     <img src={item.source} alt={item.alternative} className="project-img-responsive" id={item.id} onClick={() => openModal(item.source, item.alternative, index)}></img>

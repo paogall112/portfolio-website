@@ -81,23 +81,23 @@ function Form() {
   return (
     <>
       <div className="form-message">
-        <p>
+        <p className='left-aligned-text'>
             I encourage everyone to reach out to me whether 
-            it is regarding to programming, inquiries, hobbies, 
+            it is regarding to programming, inquiries, 
             games or just saying "Hello!" Drop me a message and 
             I'll get back to you immediately!
         </p>
-        <div className='contact-layout'>
+        <div className='form-email-layout'>
             <a href="mailto:j.paogallardo@gmail.com" className='email-layout'>
                 <img src={mailIcon} alt='mail-icon' className="nav-burger-icon"></img>
                 <span>j.paogallardo@gmail.com</span>
             </a>
             <a href="https://x.com/jpaogallardo" className='email-layout'>
-                <img src={xIcon} alt='x-icon' className="nav-burger-icon"></img>
-                <span>X (formerly Twitter)</span>
+                <img src={xIcon} alt='x-icon' className="nav-burger-icon x"></img>
+                <span>X</span>
             </a>
         </div>
-        <h1>Write me a message 📩 ⬇</h1>
+        <h3 className='form-email-write-msg' >Write me a message 📩</h3>
           <form ref={form} onSubmit={handleSubmit}>          
             <div className='flex email-field-layout'>
               <label htmlFor="name">Name:</label>        

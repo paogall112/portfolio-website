@@ -11,7 +11,7 @@ function Contacts() {
                         <div className="section-header">
                             <h2 className='h2'>Contacts</h2>
                         </div>
-                        <div className="section-content exp-margin">
+                        <div className="section-content contact-margin">
                             <div className="contact-layout">
                                 <div className="form-layout">
                                     <Form />

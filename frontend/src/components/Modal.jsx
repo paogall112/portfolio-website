@@ -73,10 +73,10 @@ function Modal({isOpen, onClose, imageSrc, imageAlt, imageId}) {
     };
 
     const messageData = {
-        0:[{title:'E-commerce Admin Page', message: '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0During my 3rd year on college on the course Web App Programming, I developed an administration website of an E-commerce using PHP as backend, HTML, CSS, and JavaScript as Frontend, and phpMyAdmin as Database and XAMPP as server. It can process CRUD services in admin side like add new products, new people that can access this side, new categories of technology, and new rules or contacts. Many functionalities were added like the table on the home page and the subcategories.'},],
-        1:[{title:'E-commerce Website', message: '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Alongside with the Admin Side of the E-commerce, here is the Po-Lo, or Potent-Loads. It is an E-commerce Website that I created using PHP as backend, HTML, CSS, and JavaScript as Frontend, and phpMyAdmin as Database and XAMPP as server. It can function as a typical e-commerce website in user side where it can put items into the cart, login, sign in, and other else. It was an interesting and fulfillment when developing the e-commerce especially the design part and the functionalities.'},],
-        2:[{title:'Body Mass Index Prediction', message: '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0During my 3rd year on college on the course Elective 1 which is Data Analytics. With our group, I served as the Backend Developer of our group in which I developed a website that measures the BMI of a person using the gender, height and the weight using Python as backend and HTML and CSS as Frontend, and Microsoft Excel to store the datasets. It predicts the Body Mass Index of a person by inputting the gender, height and weight of the user.'},],
-        3:[{title:'Inventory System', message: '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0During my 2nd year on college on the course Software Designs. With our group, I served as the Backend Developer, Frontend Developer and Programmer of our group in which I designed and developed a standalone inventory system using Java as Backend and Frontend, and MySQL as database. It stores the information of the products such as pastries and bread to the inventory system and it also stores the payment and orders for auditing.'},],
+        0:[{title:'E-commerce Admin Page', message: 'During my 3rd year on college on the course Web App Programming, I developed an administration website of an E-commerce using PHP as backend, HTML, CSS, and JavaScript as Frontend, and phpMyAdmin as Database and XAMPP as server. It can process CRUD services in admin side like add new products, new people that can access this side, new categories of technology, and new rules or contacts. Many functionalities were added like the table on the home page and the subcategories.'},],
+        1:[{title:'E-commerce Website', message: 'Alongside with the Admin Side of the E-commerce, here is the Po-Lo, or Potent-Loads. It is an E-commerce Website that I created using PHP as backend, HTML, CSS, and JavaScript as Frontend, and phpMyAdmin as Database and XAMPP as server. It can function as a typical e-commerce website in user side where it can put items into the cart, login, sign in, and other else. It was an interesting and fulfillment when developing the e-commerce especially the design part and the functionalities.'},],
+        2:[{title:'Body Mass Index Prediction', message: 'During my 3rd year on college on the course Elective 1 which is Data Analytics. With our group, I served as the Backend Developer of our group in which I developed a website that measures the BMI of a person using the gender, height and the weight using Python as backend and HTML and CSS as Frontend, and Microsoft Excel to store the datasets. It predicts the Body Mass Index of a person by inputting the gender, height and weight of the user.'},],
+        3:[{title:'Inventory System', message: 'During my 2nd year on college on the course Software Designs. With our group, I served as the Backend Developer, Frontend Developer and Programmer of our group in which I designed and developed a standalone inventory system using Java as Backend and Frontend, and MySQL as database. It stores the information of the products such as pastries and bread to the inventory system and it also stores the payment and orders for auditing.'},],
     };
 
     const messageList = messageData[imageId] || [];
@@ -95,26 +95,36 @@ function Modal({isOpen, onClose, imageSrc, imageAlt, imageId}) {
     return ( 
         <>
                 <div className={`modal-overlay ${isOpen ? 'show' : ''}`} onClick={onClose}>
-                    <div className={`modal-content ${isOpen ? 'show' : ''}`} onClick={(e) => e.stopPropagation()}>                        
-                        <span className="modal-close" onClick={onClose}>&times;</span>
-                        <Slider {...settings} ref={sliderRef}>
-                            {projectListCarousel.map((item,index) => (                            
-                                <div key={index}>
-                                    <img src={item.source} alt={item.alternative} id={item.id} className="carousel-image"></img>   
-                                </div>  
-                            ))} 
-                        </Slider>
-                        <div className='modal-title'>
-                            {messageList.map((msg, index) => (
-                                    <h1>{msg.title}</h1>
-                                ))}
-                        </div>                        
-                        <div className="modal-message">
-                            {messageList.map((msg, index) => (
-                                <p>{msg.message}</p>
-                            ))}
+                    <div className="modal-layout">
+                        <div className={`modal-content ${isOpen ? 'show' : ''}`} onClick={(e) => e.stopPropagation()}>
+                            <div className="modal-header">
+                                <span className="modal-close" onClick={onClose}>&times;</span> 
+                                <br />
+                            </div>
+                            <div className="modal-body">
+                                <Slider {...settings} ref={sliderRef}>
+                                    {projectListCarousel.map((item,index) => (                            
+                                        <div key={index}>
+                                            <img src={item.source} alt={item.alternative} id={item.id} className="carousel-image"></img>   
+                                        </div>  
+                                    ))} 
+                                </Slider>
+                                <div className='modal-title'>
+                                {messageList.map((msg, index) => (
+                                        <h1>{msg.title}</h1>
+                                    ))}
+                                </div>                        
+                                <div className="modal-message">
+                                    {messageList.map((msg, index) => (
+                                        <p>{msg.message}</p>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="modal-footer">
+                                <br />
+                            </div> 
                         </div>
-                    </div>
+                    </div>                    
                 </div>        
         </>
      );

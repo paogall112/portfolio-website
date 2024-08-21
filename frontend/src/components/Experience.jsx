@@ -22,25 +22,25 @@ function Experience() {
                             <h2 className='h2'>Experience</h2>
                             <p> </p>
                         </div>
-                        <div >
-                            <div className='section-content exp-margin'>
-                                <div className='topic-font-size'>
-                                    <h1>CMS Management Intern</h1>
-                                </div>
-                                    <h3>October 2022 - March 2023</h3>
-                                    <h3>Interns Hub - Truely.com</h3>
-                                <div > {/* className="home-hero-subheader" */}
-                                    <ul>
-                                        <li>Managed 200+ description and reviews of numerous products and services.</li>
-                                        <li>Identified and managed the problems that the products and services faced.</li>
-                                        <li>Add reviews, service features, highlighted features, and plans.</li>
-                                    </ul>
+                        <div className='section-content flex exp-flex-layout exp-margin'>
+                            <div className='experience-work'>
+                                <div className='experience-work-layout'>
+                                    <div className='experience-work-font-size'>
+                                        <h1>CMS Management Intern</h1>
+                                        <h3>October 2022 - March 2023</h3>
+                                        <h3>Interns Hub - Truely.com</h3>
+                                        <ul>
+                                            <li>Managed 200+ description and reviews of numerous products and services.</li>
+                                            <li>Identified and managed the problems that the products and services faced.</li>
+                                            <li>Add reviews, service features, highlighted features, and plans.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className='skills-section'>
                                 <div className='section-header'>
-                                    <h1>LANGUAGES/TECHNOLOGIES THAT I USED:</h1>
+                                    <h1>LANGUAGES / TECHNOLOGIES THAT I USED:</h1>
                                 </div>
                                 <div className='section-content flex icon-wrap exp-column-gap exp-margin'>
                                     {photoList.map((item,index) => (

@@ -9,7 +9,7 @@ function Footer() {
 
     return ( 
         <>
-            <footer>
+            <footer className='footer'>
                 <div className='footer-blur'>
                 <div className="page-padding">
                     <div className="container">
@@ -19,7 +19,7 @@ function Footer() {
                             </div>
                             <div className="flex footer-icons">
                                 {footerIcon.map((item,index) => (
-                                    <div key={index}>  
+                                    <div key={index} className='footer-icons-blur'>  
                                         <a href={item.href} target="_blank" rel="noopener noreferrer">
                                             <img src={item.source} alt={item.alternative} className="footer-icon-size" id={index}></img>
                                         </a>

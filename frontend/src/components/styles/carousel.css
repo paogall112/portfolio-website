@@ -36,3 +36,81 @@
   font-size: 30px;
   color: hsl(266, 42%, 47%);
 }
+
+
+@media (width <= 682px){
+  .slick-dots li {
+    width: 1.9rem;
+  }
+}
+
+@media (width <= 657px){
+  .slick-dots li {
+    width: 1.8rem;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 25px;
+  }
+}
+
+@media (width <= 631px){
+  .slick-dots li {
+    width: 1.7rem;
+  }
+}
+
+@media (width <= 606px){
+  .slick-dots li {
+    width: 1.6rem;
+  }
+  
+  .slick-dots li button{
+    width: 1.8rem;
+    height: 1rem;
+  }
+}
+
+@media (width <= 582px){  
+  .slick-dots {
+    bottom: -20px;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 498px){ 
+  .slick-next {
+    right: 0px;
+  }
+
+  .slick-prev {
+    left: 0px;
+  } 
+}
+
+@media (width <= 456px){
+  
+  .slick-dots {
+    bottom: -20px;
+  }
+  
+  .slick-dots li {
+    width: 1.4rem;
+  }
+
+  .slick-dots li button{
+    width: 1.5rem;
+    height: 0.9rem;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 15px;
+  }
+}
+
+@media (width <= 331px){  
+  .slick-dots li button{
+    margin: 0 2px;
+  }
+}

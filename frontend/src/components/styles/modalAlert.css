@@ -24,7 +24,7 @@
     border-radius: 10px;
     text-align: center;
     max-width: 25em;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,4 +72,10 @@
 
 .modal-alert-content button:hover {
     background-color: hsla(267, 72%, 52%);
+}
+
+@media (width <= 768px){    
+.modal-alert-content {
+    font-size: 0.8em;
+  }
 }

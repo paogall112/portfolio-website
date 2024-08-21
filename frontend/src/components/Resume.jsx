@@ -7,7 +7,10 @@ function Resume() {
                 <h1>
                     Grab a copy of my Résumé!                                            
                 </h1>
-                <a href={Pdf} className='resume-button' target="_blank" rel="noopener noreferrer">View my Résumé</a>
+                <br />
+                <div>
+                    <a href={Pdf} className='resume-button' target="_blank" rel="noopener noreferrer">View my Résumé</a>
+                </div>
             </div>
         </>
      );

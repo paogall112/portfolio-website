@@ -17,7 +17,7 @@ function Navbar() {
                 <div className="page-padding">
                     <div className="container">
                         <div className="nav-inner">
-                            <a href="/" className="nav-logo">
+                            <a href="/portfolio-website" className="nav-logo">
                                 <div>Juan Paolo Gallardo</div>
                             </a>
                             <div className="nav-toggle">
