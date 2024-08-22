@@ -625,8 +625,7 @@ margin: 1em;
 .modal-message{
   text-align: center;
   padding: 0 4vw;
-
-  font-size: 2.5vh;
+  font-size: 2vw;
   line-height: 1.5em;
   text-align: justify;
 }
@@ -949,6 +948,13 @@ img#login.carousel-image{
   }
   .about-pic-achievements {
     font-size: 15px;
+  }
+}
+
+@media (width <= 810px){
+  .home-hero-header{
+    padding-top: 2em;
+    gap: 2em;
   }
 }
 
