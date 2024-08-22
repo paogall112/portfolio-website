@@ -97,11 +97,9 @@ a{
 }
 
 .nav-logo-icon{
-  margin-top: 1px;
   width: 3em;
   cursor: pointer;
-  border-radius: 10px;
-  padding: 0.5em;
+  padding: 0.2em;
 }
 
 .nav-toggle {
@@ -951,12 +949,12 @@ img#login.carousel-image{
   }
 }
 
-@media (width <= 810px){
+/* @media (width <= 810px){
   .home-hero-header{
     padding-top: 2em;
     gap: 2em;
   }
-}
+} */
 
 @media (width <= 860px){
   .home-pic {
@@ -1049,6 +1047,18 @@ img#login.carousel-image{
     background-size: cover;
     background-attachment: fixed;
   }  
+}
+
+@media (orientation: portrait){
+  .modal-message{
+    font-size: 2vh;
+  }
+}
+
+@media (orientation: landscape){
+  .modal-message{
+    font-size: 2vw;
+  }
 }
 
 @media (width <= 660px){
