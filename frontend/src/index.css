@@ -21,6 +21,10 @@ body {
   background-position: center;  
 }
 
+body, html{
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -78,10 +82,26 @@ a{
   color: hsl(266, 42%, 47%);
   transition: background-color 0.3s ease;
   border-radius: 10px ;
+  cursor: pointer;
 }
 
 .nav-logo:hover {
   color: hsl(266, 42%, 37%);
+}
+
+.nav-logo-layout{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:1.5em
+}
+
+.nav-logo-icon{
+  margin-top: 1px;
+  width: 3em;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5em;
 }
 
 .nav-toggle {
@@ -102,9 +122,11 @@ a{
 }
 
 .nav-burger-menu {
-  position: absolute;
+  position: absolute;  
+  top: 71px;
   left: -2.5em;
-  width: 100vw;
+  width: 103vw;
+  max-width: 103vw;
   background-color: #f9f9f9;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(0.36em);
@@ -121,9 +143,9 @@ a{
 }
 
 .nav-burger-menu.show {
-    opacity: 1;
-    transform: translateY(0.36em);
-    visibility: visible;
+  opacity: 1;
+  transform: translateY(0.36em);
+  visibility: visible;
 }
 
 .nav-burger-menu.show > a {
