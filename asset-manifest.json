@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.75f80bbe.css",
-    "main.js": "/portfolio-website/static/js/main.16d7bac8.js",
+    "main.css": "/portfolio-website/static/css/main.1c53d21f.css",
+    "main.js": "/portfolio-website/static/js/main.edc84072.js",
     "static/js/453.2ddb282f.chunk.js": "/portfolio-website/static/js/453.2ddb282f.chunk.js",
     "static/media/about-me-pic.jpg": "/portfolio-website/static/media/about-me-pic.c13cc63493ab8a41b547.jpg",
     "static/media/home-pic.JPG": "/portfolio-website/static/media/home-pic.a8be9dabd2dde1a8efe6.JPG",
@@ -22,6 +22,8 @@
     "static/media/invSys_HistoryProfit.jpg": "/portfolio-website/static/media/invSys_HistoryProfit.c8cfb02351cb1b2e6992.jpg",
     "static/media/invSys_Home.jpg": "/portfolio-website/static/media/invSys_Home.bf307c89eff8c63ef7fa.jpg",
     "static/media/invSys_Ingredients.jpg": "/portfolio-website/static/media/invSys_Ingredients.cdfc386dfea33de8f2e1.jpg",
+    "static/media/favicon.ico": "/portfolio-website/static/media/favicon.599f15df1c1dc3c23b3e.ico",
+    "static/media/icon.ico": "/portfolio-website/static/media/icon.9af6941d350c94984ec7.ico",
     "static/media/po-lo-shop2.png": "/portfolio-website/static/media/po-lo-shop2.4b911b77d178a9b45fd1.png",
     "static/media/invSys_Orders.jpg": "/portfolio-website/static/media/invSys_Orders.5af79b5728f4ef0fd25c.jpg",
     "static/media/po-lo-homepage2.png": "/portfolio-website/static/media/po-lo-homepage2.fddddedb568dd4f72b35.png",
@@ -70,12 +72,12 @@
     "static/media/X.svg": "/portfolio-website/static/media/X.54cae6caabb6ebe260e469af223fb660.svg",
     "index.html": "/portfolio-website/index.html",
     "static/media/hamburger-menu-white.svg": "/portfolio-website/static/media/hamburger-menu-white.c6f2f9f4abd6519b71ea089a3ae8109c.svg",
-    "main.75f80bbe.css.map": "/portfolio-website/static/css/main.75f80bbe.css.map",
-    "main.16d7bac8.js.map": "/portfolio-website/static/js/main.16d7bac8.js.map",
+    "main.1c53d21f.css.map": "/portfolio-website/static/css/main.1c53d21f.css.map",
+    "main.edc84072.js.map": "/portfolio-website/static/js/main.edc84072.js.map",
     "453.2ddb282f.chunk.js.map": "/portfolio-website/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75f80bbe.css",
-    "static/js/main.16d7bac8.js"
+    "static/css/main.1c53d21f.css",
+    "static/js/main.edc84072.js"
   ]
 }
