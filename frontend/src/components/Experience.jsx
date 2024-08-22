@@ -13,6 +13,19 @@ function Experience() {
         {source: require('./assets/icons/php.svg').default, alternative:"php-icon"},
     ]
 
+    const images = document.querySelectorAll('.exp-img-responsive');
+
+    images.forEach(image => {
+        image.addEventListener('touchstart', function() {
+            this.classList.add('hovered');
+        });
+        image.addEventListener('touchend', function() {
+            setTimeout(() => {
+                this.classList.remove('hovered');
+            }, 500);
+        });
+    });
+
     return ( 
         <>
             <section id="Experience" className="experience-section section">

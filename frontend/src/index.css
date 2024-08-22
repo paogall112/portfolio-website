@@ -19,6 +19,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;  
+  height: 100%;
+  width: 100%;
 }
 
 code {
@@ -380,8 +382,8 @@ a{
 
 .about-pic-achievements{  
   font-size: 20px;
-  margin-right: 1em;
-  margin-left: 1em;
+  margin-right: 4em;
+  margin-left: 4em;
   line-height: 1.5em;  
   background: hsla(0, 0%, 100%, .7);
   background-size: cover;
@@ -509,6 +511,7 @@ a{
   transition: filter 0.5s ease;
 }
 
+.exp-img-responsive.hovered,
 .exp-img-responsive:hover {
   filter: grayscale(0%);
 }
@@ -988,6 +991,7 @@ img#login.carousel-image{
     flex-direction: column;
     margin-bottom: 45px;
     padding-top: 5em;
+    min-height: 0px;
   }
 
   .home-pic {
@@ -1005,11 +1009,16 @@ img#login.carousel-image{
   }
 
   .about-pic-achievements{
-    margin: 0em 0em;
+    margin: 0em 1.5em;
   }
   
   .about-pic-message {
     max-width: 42em;
+  }
+
+  .about-message-scroll {
+    overflow-y: visible; 
+    max-height: 100%;
   }
 
   .about-pic {
