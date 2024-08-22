@@ -7,7 +7,6 @@ import Projects from './Projects';
 
 function Main() {
     const [titleVisible, setTitleVisible] = useState(false);
-    const [ImgVisible, setImgVisible] = useState(false);
     const [glassesVisible, setGlassesVisible] = useState(false);
     const [laptopVisible, setLaptopVisible] = useState(false);
     const [serverVisible, setServerVisible] = useState(false);
@@ -16,38 +15,40 @@ function Main() {
         setTimeout(() => {
             setTitleVisible(true);
         }, 500);
-        
-        // setTimeout(() => {
-        //     setImgVisible(true);
-        // }, 500);        
+        setTimeout(() => {                                
+            setLaptopVisible(true);
+        }, 1500);
+        setTimeout(() => {                                
+            setServerVisible(true);
+        }, 2000);
 
-        const toggleGlasses = () => {
-            setTimeout(() => {
-                setGlassesVisible(true);
-            }, 800);
-            setTimeout(() => {                                
-                setLaptopVisible(true);
-            }, 1500);
-            setTimeout(() => {                                
-                setServerVisible(true);
-            }, 2000);
+        // const toggleGlasses = () => {
+        //     setTimeout(() => {
+        //         setGlassesVisible(true);
+        //     }, 800);
+        //     setTimeout(() => {                                
+        //         setLaptopVisible(true);
+        //     }, 1500);
+        //     setTimeout(() => {                                
+        //         setServerVisible(true);
+        //     }, 2000);
 
-            setTimeout(() => {
-                setGlassesVisible(false); 
-            }, 3000);
-            setTimeout(() => {                              
-                setLaptopVisible(false);
-            },4000);
-            setTimeout(() => {            
-                setServerVisible(false);
-            },4300);
-        };
+        //     setTimeout(() => {
+        //         setGlassesVisible(false); 
+        //     }, 3000);
+        //     setTimeout(() => {                              
+        //         setLaptopVisible(false);
+        //     },4000);
+        //     setTimeout(() => {            
+        //         setServerVisible(false);
+        //     },4300);
+        // };
 
-        toggleGlasses();
+        // toggleGlasses();
 
-        const intervalId = setInterval(toggleGlasses,6000);
+        // const intervalId = setInterval(toggleGlasses,6000);
 
-        return () => clearInterval(intervalId);
+        // return () => clearInterval(intervalId);
 
     }, []);
 
