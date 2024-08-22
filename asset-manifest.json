@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.1dda643f.css",
-    "main.js": "/portfolio-website/static/js/main.edc84072.js",
+    "main.js": "/portfolio-website/static/js/main.ed072ddc.js",
     "static/js/453.2ddb282f.chunk.js": "/portfolio-website/static/js/453.2ddb282f.chunk.js",
     "static/media/purple-scribble1.jpg": "/portfolio-website/static/media/purple-scribble1.83b5b05af815511a6386.jpg",
     "static/media/about-me-pic.jpg": "/portfolio-website/static/media/about-me-pic.c13cc63493ab8a41b547.jpg",
@@ -31,7 +31,7 @@
     "static/media/po-lo-cart2.png": "/portfolio-website/static/media/po-lo-cart2.f29122066429b3437ac2.png",
     "static/media/admin-brands1.png": "/portfolio-website/static/media/admin-brands1.45af38e6b65bccda4d19.png",
     "static/media/po-lo-store2.png": "/portfolio-website/static/media/po-lo-store2.2a876c2fab14b7076d17.png",
-    "static/media/resume2024.pdf": "/portfolio-website/static/media/resume2024.8d6dd8fd997ba9e11bbb.pdf",
+    "static/media/resume2024.pdf": "/portfolio-website/static/media/resume2024.1135714bbdd132136c1e.pdf",
     "static/media/admin-homepage.png": "/portfolio-website/static/media/admin-homepage.6cc3474cd7dea9370cc5.png",
     "static/media/admin-products2.png": "/portfolio-website/static/media/admin-products2.d075e5d14c41a291be40.png",
     "static/media/admin-products1.png": "/portfolio-website/static/media/admin-products1.2229b45b2451348e476c.png",
@@ -73,11 +73,11 @@
     "index.html": "/portfolio-website/index.html",
     "static/media/hamburger-menu-white.svg": "/portfolio-website/static/media/hamburger-menu-white.c6f2f9f4abd6519b71ea089a3ae8109c.svg",
     "main.1dda643f.css.map": "/portfolio-website/static/css/main.1dda643f.css.map",
-    "main.edc84072.js.map": "/portfolio-website/static/js/main.edc84072.js.map",
+    "main.ed072ddc.js.map": "/portfolio-website/static/js/main.ed072ddc.js.map",
     "453.2ddb282f.chunk.js.map": "/portfolio-website/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1dda643f.css",
-    "static/js/main.edc84072.js"
+    "static/js/main.ed072ddc.js"
   ]
 }
