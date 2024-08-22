@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 // import {ReactComponent as YourSvg} from './assets/hamburger-menu3.svg';
 import React, { useState, useEffect } from "react";
@@ -46,10 +47,10 @@ function Navbar() {
                 <div className="page-padding">
                     <div className="container">
                         <div className="nav-inner">
-                            <div className="nav-logo-layout"> 
+                            <a href="#" className="nav-logo-layout">
                                 <img src={navIcon} alt="paolo-icon" className="nav-logo-icon" onClick={scrollToTop}></img>
                                 <div className="nav-logo" onClick={scrollToTop}>Juan Paolo Gallardo</div>
-                            </div>                            
+                            </a>
                             <div className="nav-toggle">
                                 <BurgerMenu menuList = {menuList}/>
                             </div>    

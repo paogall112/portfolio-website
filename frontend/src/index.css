@@ -121,7 +121,7 @@ a{
 
 .nav-burger-menu {
   position: absolute;  
-  top: 71px;
+  top: 60px;
   left: -2.5em;
   width: 103vw;
   max-width: 103vw;
@@ -967,13 +967,20 @@ img#login.carousel-image{
   .nav-menu {
     display: none;
   }
+  
   .nav-logo {
     color: hsl(0, 0%, 100%);
+    margin-right: 10vw;
+    font-size: 16px;
   }
 
   .nav-logo:hover {
     background-color:hsla(267, 84%, 81%, 0.226);
     color: hsl(0, 0%, 100%);
+  }
+
+  .nav-logo-layout{    
+    gap: 0.5em;
   }
 
   .nav {
