@@ -978,12 +978,6 @@ img#login.carousel-image{
 }
 
 @media (width <= 768px){
-  body {
-    background-attachment: scroll; 
-    position: relative; 
-    height: auto; 
-  }
-
   .nav-menu {
     display: none;
   }
@@ -1220,6 +1214,14 @@ img#login.carousel-image{
 @media (width >= 769px){
   .nav-toggle {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    position: relative;
+    height: auto;
   }
 }
 
