@@ -16,10 +16,10 @@ body {
   line-height: 1.2;
   height: 100%;
   width: 100%;
-  background-image: url("./components/assets/purple-scribble3.jpg");
+  background-image: url("./components/assets/purple-fade.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: local;
   background-position: center;  
 }
 
@@ -216,7 +216,7 @@ a{
 .home-hero-heading-masked-text {
   font-size: 1em;
   font-weight: bold;
-  background: url('./components/assets/purple-fade.jpg') no-repeat center center;
+  background: url('./components/assets/purple-fade2.jpg') no-repeat center center;
   background-size: cover;
   background-clip:content-box;
   -webkit-background-clip: text;
@@ -314,21 +314,21 @@ a{
   box-shadow: 0 2px 8px #0000008a;
 }
 
-/* .about-section{
-  background: hsla(267, 84%, 71%, 0.226);
+.about-section{
+  background: url('./components/assets/purple-fade.jpg')
 }
 
 .experience-section{
-  background: hsla(267, 84%, 71%, 0.767);
+  background: url('./components/assets/purple-fade.jpg')
 }
 
 .projects-section{
-  background: hsla(267, 84%, 71%, 0.226);
+  background: url('./components/assets/purple-fade.jpg')
 }
 
 .contacts-section{
-  background: hsla(267, 84%, 71%, 0.767);
-} */
+  background: url('./components/assets/purple-fade.jpg')
+}
 
 .section {
   padding-top: 6em;
@@ -1074,6 +1074,12 @@ img#login.carousel-image{
     background-size: cover;
     background-attachment: fixed;
   }  
+}
+
+@media (max-width: 768px) {
+  body {
+      background-attachment: scroll;
+  }
 }
 
 @media (orientation: portrait){
