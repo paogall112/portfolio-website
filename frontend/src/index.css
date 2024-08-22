@@ -313,19 +313,19 @@ a{
 }
 
 .about-section{
-  background: hsla(267, 84%, 71%, 0.226);
+  background: hsla(267, 84%, 71%, 0.767);
 }
 
 .experience-section{
-  background: hsla(267, 84%, 71%, 0.767);
+  background: hsla(267, 86%, 81%, 0.281);
 }
 
 .projects-section{
-  background: hsla(267, 84%, 71%, 0.226);
+  background: hsla(267, 84%, 71%, 0.767);
 }
 
 .contacts-section{
-  background: hsla(267, 84%, 71%, 0.767);
+  background: hsla(267, 84%, 71%, 0.226);
 }
 
 .section {
@@ -380,7 +380,7 @@ a{
   display: block;
   height: auto;
   width: 28em;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   box-shadow: 0 2px 8px #0000008a;
 }
 
@@ -418,6 +418,7 @@ a{
   position: sticky;
   overflow: hidden;
   top: 0;
+  border-radius: 10px 10px 0px 0px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -861,6 +862,12 @@ img#login.carousel-image{
   font-size: 1em;
 }
 
+@media (width <= 1023px){
+  .about-pic-achievements{
+    margin-right: 6em;
+    margin-left: 6em;
+  }
+}
 
 @media (width <= 1176px){
   .about-column-gap {
