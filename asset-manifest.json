@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.a0405a51.css",
+    "main.css": "/portfolio-website/static/css/main.56e20fbb.css",
     "main.js": "/portfolio-website/static/js/main.2c247cd7.js",
     "static/js/453.2ddb282f.chunk.js": "/portfolio-website/static/js/453.2ddb282f.chunk.js",
     "static/media/purple-scribble1.jpg": "/portfolio-website/static/media/purple-scribble1.83b5b05af815511a6386.jpg",
@@ -72,12 +72,12 @@
     "static/media/X.svg": "/portfolio-website/static/media/X.54cae6caabb6ebe260e469af223fb660.svg",
     "index.html": "/portfolio-website/index.html",
     "static/media/hamburger-menu-white.svg": "/portfolio-website/static/media/hamburger-menu-white.c6f2f9f4abd6519b71ea089a3ae8109c.svg",
-    "main.a0405a51.css.map": "/portfolio-website/static/css/main.a0405a51.css.map",
+    "main.56e20fbb.css.map": "/portfolio-website/static/css/main.56e20fbb.css.map",
     "main.2c247cd7.js.map": "/portfolio-website/static/js/main.2c247cd7.js.map",
     "453.2ddb282f.chunk.js.map": "/portfolio-website/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0405a51.css",
+    "static/css/main.56e20fbb.css",
     "static/js/main.2c247cd7.js"
   ]
 }
