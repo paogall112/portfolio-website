@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.98ced3ec.css",
+    "main.css": "/portfolio-website/static/css/main.e5476814.css",
     "main.js": "/portfolio-website/static/js/main.6fb704ea.js",
     "static/js/453.2ddb282f.chunk.js": "/portfolio-website/static/js/453.2ddb282f.chunk.js",
     "static/media/about-me-pic.jpg": "/portfolio-website/static/media/about-me-pic.c13cc63493ab8a41b547.jpg",
@@ -9,8 +9,8 @@
     "static/media/bmi3.png": "/portfolio-website/static/media/bmi3.a3586fc74acb5b362a7d.png",
     "static/media/bmi1.png": "/portfolio-website/static/media/bmi1.a291c013066dffc6390c.png",
     "static/media/po-lo-homepage1.png": "/portfolio-website/static/media/po-lo-homepage1.bc7f654627c38c9cd5e5.png",
-    "static/media/purple-fade.jpg": "/portfolio-website/static/media/purple-fade.691f2c0f6820647e88bf.jpg",
-    "static/media/purple-fade2.jpg": "/portfolio-website/static/media/purple-fade2.6475ba7d6aaf6666a438.jpg",
+    "static/media/purple-scribble1.jpg": "/portfolio-website/static/media/purple-scribble1.2223210af6ede52cb02f.jpg",
+    "static/media/purple-fade.jpg": "/portfolio-website/static/media/purple-fade.6475ba7d6aaf6666a438.jpg",
     "static/media/po-lo-shop1.png": "/portfolio-website/static/media/po-lo-shop1.f062d0973de5570746de.png",
     "static/media/po-lo-store1.png": "/portfolio-website/static/media/po-lo-store1.a95656704c3ec6424450.png",
     "static/media/po-lo-cart1.png": "/portfolio-website/static/media/po-lo-cart1.9b3a1e03eafe5599e8ab.png",
@@ -72,12 +72,12 @@
     "static/media/X.svg": "/portfolio-website/static/media/X.54cae6caabb6ebe260e469af223fb660.svg",
     "index.html": "/portfolio-website/index.html",
     "static/media/hamburger-menu-white.svg": "/portfolio-website/static/media/hamburger-menu-white.c6f2f9f4abd6519b71ea089a3ae8109c.svg",
-    "main.98ced3ec.css.map": "/portfolio-website/static/css/main.98ced3ec.css.map",
+    "main.e5476814.css.map": "/portfolio-website/static/css/main.e5476814.css.map",
     "main.6fb704ea.js.map": "/portfolio-website/static/js/main.6fb704ea.js.map",
     "453.2ddb282f.chunk.js.map": "/portfolio-website/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98ced3ec.css",
+    "static/css/main.e5476814.css",
     "static/js/main.6fb704ea.js"
   ]
 }
