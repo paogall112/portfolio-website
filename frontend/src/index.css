@@ -14,12 +14,6 @@ body {
   color: hsla(0, 0%, 0%, 0.822);
   font-size: 16px;
   line-height: 1.2;
-  background-color: hsla(267, 72%, 37%, 0.418);  
-  background-image: url("./components/assets/purple-scribble1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;  
   height: 100%;
   width: 100%;
 }
@@ -67,6 +61,14 @@ code {
 a{  
   text-decoration: none;
   color:black;
+}
+
+main{
+  background-image: url("./components/assets/purple-scribble1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;  
 }
 
 .nav-logo {
@@ -393,7 +395,7 @@ a{
 }
 
 .about-message-scroll{
-  /* overflow-y: auto; */
+  overflow-y: auto;
   max-height: 25em;
 }
 
@@ -549,7 +551,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   z-index: 2000;
   opacity: 0; 
   border-radius: 10px;
@@ -1018,7 +1020,7 @@ img#login.carousel-image{
   }
 
   .about-message-scroll {
-    /* overflow-y: visible;  */
+    overflow-y: visible; 
     max-height: 100%;
   }
 
