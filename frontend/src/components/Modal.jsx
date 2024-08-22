@@ -1,13 +1,25 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './styles/carousel.css';
 
 function Modal({isOpen, onClose, imageSrc, imageAlt, imageId}) {
-    const sliderRef = useRef(null);
 
+    const [fontSize,setFontSize] = useState("2vw");
+
+    const handleResize = () => {
+        if(window.innerWidth < window.innerHeight){
+            setFontSize("2vh");
+        } else {
+            setFontSize ("2vw");
+        }
+    };
+
+    const sliderRef = useRef(null);
+    
     useEffect(() => {
+
         if (isOpen) {
             document.body.classList.add('no-scroll');         
         } else {
@@ -17,10 +29,21 @@ function Modal({isOpen, onClose, imageSrc, imageAlt, imageId}) {
             }
         }
 
+       
         return () => {
             document.body.classList.remove('no-scroll');
+            window.removeEventListener('resize', handleResize);
         };
     }, [isOpen]);
+    
+    useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     
     const projectListData = {
         0: [
@@ -114,7 +137,7 @@ function Modal({isOpen, onClose, imageSrc, imageAlt, imageId}) {
                                         <h1>{msg.title}</h1>
                                     ))}
                                 </div>                        
-                                <div className="modal-message">
+                                <div className="modal-message"  style={{fontSize}}>
                                     {messageList.map((msg, index) => (
                                         <p>{msg.message}</p>
                                     ))}
