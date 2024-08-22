@@ -16,6 +16,11 @@ body {
   line-height: 1.2;
   height: 100%;
   width: 100%;
+  background-image: url("./components/assets/purple-scribble3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;  
 }
 
 code {
@@ -61,14 +66,6 @@ code {
 a{  
   text-decoration: none;
   color:black;
-}
-
-main{
-  background-image: url("./components/assets/purple-scribble1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;  
 }
 
 .nav-logo {
@@ -192,7 +189,7 @@ main{
 .home-hero-header {
   display: flex;
   min-height: 100vh;
-  margin-bottom: 8em;
+  padding-bottom: 8em;
   padding-top: 3em;
   gap: 3em;
   justify-content: center;
@@ -316,6 +313,22 @@ main{
   border-radius: 10px;
   box-shadow: 0 2px 8px #0000008a;
 }
+
+/* .about-section{
+  background: hsla(267, 84%, 71%, 0.226);
+}
+
+.experience-section{
+  background: hsla(267, 84%, 71%, 0.767);
+}
+
+.projects-section{
+  background: hsla(267, 84%, 71%, 0.226);
+}
+
+.contacts-section{
+  background: hsla(267, 84%, 71%, 0.767);
+} */
 
 .section {
   padding-top: 6em;

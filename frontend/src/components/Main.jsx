@@ -54,37 +54,35 @@ function Main() {
 
     return ( 
         <>
-            <main>
-                <header className="home-hero">
-                    <div className="page-padding">
-                        <div className="container">
-                            <div className="home-hero-header">
-                                <div className="home-hero-header-wrap">
-                                    <h1 className={`home-hero-heading text ${titleVisible ? "visible" : ""}`}>Hello, I'm <span className='home-hero-heading-masked-text'>Paolo!</span></h1>
-                                    <h2 className={`home-hero-title text ${titleVisible ? "visible" : ""}`}>Software Developer</h2>
-                                    <div className={`home-hero-subheader text ${titleVisible ? "visible" : ""}`}>                                     
-                                        <p className="home-hero-subheader-message"> 
-                                        I'm a software developer with a passion for front end and back end development.  
-                                        I aspire towards a career that will apply my knowledge in developing awesome 
-                                        stuff through creating innovative software and applications. 
-                                        </p>
-                                    </div>
-                                </div>                                
-                                <div className="home-pic-wrap">
-                                    <img src={homePic} alt="menu-icon" className="home-pic" />
-                                    <img src = {glasses} alt = 'glasses' className={`home-pic-glasses ${glassesVisible ? "visible" : ""}`} />
-                                    <img src = {laptop} alt = 'glasses' className={`home-pic-laptop ${laptopVisible ? "visible" : ""}`} />
-                                    <img src = {server} alt = 'glasses' className={`home-pic-server ${serverVisible ? "visible" : ""}`} />
+            <section className="home-hero">
+                <div className="page-padding">
+                    <div className="container">
+                        <div className="home-hero-header">
+                            <div className="home-hero-header-wrap">
+                                <h1 className={`home-hero-heading text ${titleVisible ? "visible" : ""}`}>Hello, I'm <span className='home-hero-heading-masked-text'>Paolo!</span></h1>
+                                <h2 className={`home-hero-title text ${titleVisible ? "visible" : ""}`}>Software Developer</h2>
+                                <div className={`home-hero-subheader text ${titleVisible ? "visible" : ""}`}>                                     
+                                    <p className="home-hero-subheader-message"> 
+                                    I'm a software developer with a passion for front end and back end development.  
+                                    I aspire towards a career that will apply my knowledge in developing awesome 
+                                    stuff through creating innovative software and applications. 
+                                    </p>
                                 </div>
+                            </div>                                
+                            <div className="home-pic-wrap">
+                                <img src={homePic} alt="menu-icon" className="home-pic" />
+                                <img src = {glasses} alt = 'glasses' className={`home-pic-glasses ${glassesVisible ? "visible" : ""}`} />
+                                <img src = {laptop} alt = 'glasses' className={`home-pic-laptop ${laptopVisible ? "visible" : ""}`} />
+                                <img src = {server} alt = 'glasses' className={`home-pic-server ${serverVisible ? "visible" : ""}`} />
                             </div>
                         </div>
                     </div>
-                </header>
-                <About />
-                <Experience />
-                <Projects />
-                <Contacts />
-            </main>
+                </div>
+            </section>
+            <About />
+            <Experience />
+            <Projects />
+            <Contacts />
         </>
      );
 }
