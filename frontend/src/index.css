@@ -188,7 +188,7 @@ a{
   display: flex;
   min-height: 100vh;
   margin-bottom: 8em;
-  padding-top: 6em;
+  padding-top: 3em;
   gap: 3em;
   justify-content: center;
   align-items:center;
@@ -891,9 +891,15 @@ img#login.carousel-image{
   }
 }
 
+@media (width <= 1101px){
+  .home-hero-subheader {
+    font-size: 18px;
+  }
+}
+
 @media (width <= 1051px){
   .home-hero-header{
-    padding-top: 7em;
+    padding-top: 3em;
     gap: 2em;
   }
   .home-hero-heading{
