@@ -21,10 +21,6 @@ body {
   background-position: center;  
 }
 
-body, html{
-  height: 100%;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -77,6 +73,7 @@ a{
   right: auto;
   bottom: auto;
   z-index: 102;
+  padding: 6px 6px;
   font-size: 20px;
   font-weight: 500; 
   color: hsl(266, 42%, 47%);
@@ -121,7 +118,7 @@ a{
 
 .nav-burger-menu {
   position: absolute;  
-  top: 60px;
+  top: 64px;
   left: -2.5em;
   width: 103vw;
   max-width: 103vw;
@@ -189,10 +186,9 @@ a{
 
 .home-hero-header {
   display: flex;
-  height: 100%;
   min-height: 100vh;
-  margin-bottom: 45px;
-  /* padding-top: 6em; */
+  margin-bottom: 8em;
+  padding-top: 6em;
   gap: 3em;
   justify-content: center;
   align-items:center;
@@ -895,10 +891,13 @@ img#login.carousel-image{
   }
 }
 
-@media (width <= 1023px){
+@media (width <= 1051px){
   .home-hero-header{
-    padding-top: 1em;
+    padding-top: 7em;
     gap: 2em;
+  }
+  .home-hero-heading{
+    font-size: 3em;
   }
 }
 
@@ -925,11 +924,8 @@ img#login.carousel-image{
     margin-top: 1px;
     width: 25em;
   }
-  .home-hero-heading{
-    font-size: 3.5em;
-  }
   .home-hero-subheader{
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -949,17 +945,12 @@ img#login.carousel-image{
   }
 }
 
-/* @media (width <= 810px){
-  .home-hero-header{
-    padding-top: 2em;
-    gap: 2em;
-  }
-} */
-
 @media (width <= 860px){
   .home-pic {
-    margin-top: 1px;
     width: 21em;
+  }
+  .home-hero-subheader{
+    font-size: 16px;
   }
 }
 
@@ -970,8 +961,7 @@ img#login.carousel-image{
   
   .nav-logo {
     color: hsl(0, 0%, 100%);
-    margin-right: 10vw;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .nav-logo:hover {
@@ -990,9 +980,8 @@ img#login.carousel-image{
   
   .home-hero-header {
     flex-direction: column;
-    min-height: 608px;
     margin-bottom: 45px;
-    padding-top: 45px;
+    padding-top: 5em;
   }
 
   .home-pic {
@@ -1065,12 +1054,6 @@ img#login.carousel-image{
 @media (orientation: landscape){
   .modal-message{
     font-size: 2vw;
-  }
-}
-
-@media (width <= 660px){
-  .nav-logo{
-    padding: 6px 0px;
   }
 }
 
