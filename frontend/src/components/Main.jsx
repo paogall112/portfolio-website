@@ -54,13 +54,14 @@ function Main() {
 
     return ( 
         <>
-            <section className="home-hero">
+            <section className="main-section home-hero">
                 <div className="page-padding">
                     <div className="container">
                         <div className="home-hero-header">
                             <div className="home-hero-header-wrap">
                                 <h1 className={`home-hero-heading text ${titleVisible ? "visible" : ""}`}>Hello, I'm <span className='home-hero-heading-masked-text'>Paolo!</span></h1>
                                 <h2 className={`home-hero-title text ${titleVisible ? "visible" : ""}`}>Software Developer</h2>
+                                <hr className='gradient-hr about'/>
                                 <div className={`home-hero-subheader text ${titleVisible ? "visible" : ""}`}>                                     
                                     <p className="home-hero-subheader-message"> 
                                     I'm a software developer with a passion for front end and back end development.  

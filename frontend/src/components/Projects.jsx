@@ -40,6 +40,7 @@ function Projects() {
                     <div className="projects-container">
                         <div className="section-header">
                             <h2 className='h2'>Projects</h2>
+                            <hr class="gradient-hr"/>
                         </div>
                         <div className="flex-wrap projects-margin">
                             {projectList.map((item,index) => (

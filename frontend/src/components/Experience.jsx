@@ -33,7 +33,7 @@ function Experience() {
                     <div className="container">
                         <div className="section-header">
                             <h2 className='h2'>Experience</h2>
-                            <p> </p>
+                            <hr class="gradient-hr inverse"/>
                         </div>
                         <div className='section-content flex exp-flex-layout exp-margin'>
                             <div className='experience-work'>

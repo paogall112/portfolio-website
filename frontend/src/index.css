@@ -14,13 +14,6 @@ body {
   color: hsla(0, 0%, 0%, 0.822);
   font-size: 16px;
   line-height: 1.2;
-  background-image: url('./components//assets/purple-scribble1.jpg');
-  background-repeat: no-repeat; 
-  background-size: cover;
-  /* background-attachment: fixed; */
-  background-position: center;  
-  height: 100%;
-  width: 100%;
 }
 
 code {
@@ -224,25 +217,23 @@ a{
 }
 
 .home-hero-heading {
-  padding: 0em 0em 0em 0.5em;
   font-size: 5em;
   margin-bottom: 0;
   font-family:'Inter Display', sans-serif;
   text-align: left;
 }
 
-.home-hero-title{
-  padding: 0em 1.6em;
+.gradient-hr about {
+  width: 50%;
+  margin-left: 0;
 }
 
 .home-hero-subheader {
   font-size: 20px;
   max-width: 580px;
   line-height: 1.5em;  
-  padding: 0em 1em;  
   background: hsla(0, 0%, 100%, .7);
   background-size: cover;
-  background-clip:content-box;
   border-radius: 10px;
 }
 
@@ -314,7 +305,53 @@ a{
   box-shadow: 0 2px 8px #0000008a;
 }
 
+.main-section{
+  background-image: url('./components//assets/purple-scribble1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  height: 100%;
+  width: 100%;
+}
+
+.gradient-hr{
+  border: none;
+  height: 5px;
+  background: linear-gradient(270deg, rgb(229, 197, 243), rgb(206, 137, 238), rgb(102, 51, 153),  rgb(206, 137, 238), rgb(229, 197, 243));
+  background-size: 400% 400%;
+  animation: gradient-rotation 5s ease infinite;
+}
+
+.gradient-hr.inverse{
+  background: linear-gradient(270deg, rgb(102, 51, 153), rgb(206, 137, 238), rgb(229, 197, 243),  rgb(206, 137, 238), rgb(102, 51, 153));
+  background-size: 400% 400%;
+  animation: gradient-rotation 5s ease infinite;
+  border: none;
+  height: 5px;
+}
+
+.gradient-hr.about{
+  width: 14em;
+  margin: 0;
+}
+
+@keyframes gradient-rotation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 .about-section{
+  background: hsla(267, 84%, 71%, 0.767);
+}
+
+.about-section-blur{  
   background: hsla(267, 84%, 71%, 0.767);
 }
 
@@ -458,7 +495,6 @@ a{
   max-width: 40em;
   width: 100%;
   line-height: 1.5em;
-  /* padding: 2em;  */
   background: hsla(0, 0%, 100%, .7);;
   background-size: cover;
   background-clip:content-box;
@@ -493,7 +529,7 @@ a{
 
 .h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-size: 64px;
   line-height: 1.1;
   font-weight: 500;
@@ -1012,7 +1048,7 @@ img#login.carousel-image{
   
   .home-hero-header {
     flex-direction: column;
-    margin-bottom: 45px;
+    padding-bottom: 9em;
     padding-top: 5em;
     min-height: 0px;
   }

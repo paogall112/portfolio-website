@@ -10,6 +10,7 @@ function Contacts() {
                     <div className="container">
                         <div className="section-header">
                             <h2 className='h2'>Contacts</h2>
+                            <hr class="gradient-hr inverse"/>
                         </div>
                         <div className="section-content contact-margin">
                             <div className="contact-layout">
